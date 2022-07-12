@@ -1,10 +1,6 @@
-html,
-body,
-header,
-.view {
-  height: 100%;
+body{
+  overflow-x: hidden;
 }
-
 .star {
   color: #ffd700;
 }
@@ -30,23 +26,6 @@ header,
 .fotterhover:hover {
   border-bottom: 1px solid white !important;
   color: gray;
-}
-
-@media (max-width: 740px) {
-  html,
-  body,
-  header,
-  .view {
-    height: 1000px;
-  }
-}
-@media (min-width: 800px) and (max-width: 850px) {
-  html,
-  body,
-  header,
-  .view {
-    height: 650px;
-  }
 }
 
 .bookhover:hover {
@@ -82,19 +61,6 @@ header,
   background: #fafafa !important;
 }
 
-@media (min-width: 961px) {
-  .star {
-    font-size: 45px !important;
-    color: #ffd700 !important;
-  }
-}
-
-@media (max-width: 991px) {
-  .navbar:not(.top-nav-collapse) {
-    background: #fafafa !important;
-  }
-}
-
 .rgba-gradient {
   background: linear-gradient(
     45deg,
@@ -114,31 +80,6 @@ header,
 h6 {
   line-height: 1.7;
 }
-
-@media (min-width: 1025px) {
-  .navleft {
-    margin-left: 8%;
-  }
-  .star {
-    font-size: 45px !important;
-    color: #ffd700 !important;
-  }
-}
-
-@media (min-width: 600px) {
-  .star {
-    font-size: 20px !important;
-    color: #ffd700 !important;
-  }
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-  .star {
-    font-size: 28px !important;
-    color: #ffd700 !important;
-  }
-}
-
 .step {
   list-style: none;
   margin: 0;
@@ -219,4 +160,26 @@ button a:hover {
 
 .cards .cardmask{
   height: 240px;
+}
+
+.view .mask{
+  position: relative;
+}
+
+.first-div{
+  margin-bottom: 20px;
+}
+
+
+@media only screen and (min-width: 768px){
+    .second-div{
+      margin-top: 15px;
+    }
+}
+
+
+@media only screen and (min-width: 992px){
+  body{
+    font-size: 0.8rem;
+   }
 }
